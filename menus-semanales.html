@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Sabores Exóticos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="menu.html">Menú Internacional</a></li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                    <ul>
+                        <li><a href="menus-semanales.html">Menús Semanales</a></li>
+                        <li><a href="cursos-cocina.html">Cursos de Cocina</a></li>
+                        <li><a href="eventos.html">Eventos y Celebraciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Menús Semanales Personalizados</h1>
+        
+        <section id="como-funciona">
+            <h2>Cómo Funciona</h2>
+            <ol>
+                <li>
+                    <h3>Selecciona tu Plan</h3>
+                    <p>Escoge entre nuestros planes semanales disponibles</p>
+                </li>
+                <li>
+                    <h3>Personaliza tu Menú</h3>
+                    <p>Adapta los platos según tus preferencias</p>
+                </li>
+                <li>
+                    <h3>Recibe en tu Hogar</h3>
+                    <p>Entregas programadas a tu domicilio</p>
+                </li>
+            </ol>
+        </section>
+    
+        <section id="planes-disponibles">
+            <h2>Planes Disponibles</h2>
+            <article class="plan">
+                <h3>Plan Individual</h3>
+                <ul>
+                    <li>5 comidas por semana</li>
+                    <li>Porciones individuales</li>
+                    <li>Menú personalizable</li>
+                    <li>Incluye entrega</li>
+                </ul>
+            </article>
+    
+            <article class="plan">
+                <h3>Plan Familiar</h3>
+                <ul>
+                    <li>5 comidas por semana</li>
+                    <li>4-6 porciones por comida</li>
+                    <li>Menú personalizable</li>
+                    <li>Incluye entrega</li>
+                </ul>
+            </article>
+        </section>
+    
+        <section id="menu-semanal">
+            <h2>Menú de Esta Semana</h2>
+            <article>
+                <h3>Lunes</h3>
+                <img src="images/menus/lunes.jpg" alt="Menú Lunes">
+                <h4>Opciones Disponibles:</h4>
+                <ul>
+                    <li>Opción 1: Pescado al horno</li>
+                    <li>Opción 2: Pollo a la parrilla</li>
+                    <li>Opción 3: Pasta vegetariana</li>
+                </ul>
+            </article>
+            <!-- Repetir para otros días -->
+        </section>
+    
+        <section id="formulario-pedido">
+            <h2>Solicitar Menú Semanal</h2>
+            <form action="/procesar-pedido" method="post">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Detalles del Plan</legend>
+                    <label for="tipo-plan">Tipo de Plan:</label>
+                    <select id="tipo-plan" name="tipo-plan">
+                        <option value="individual">Plan Individual</option>
+                        <option value="familiar">Plan Familiar</option>
+                    </select>
+    
+                    <label for="fecha-inicio">Fecha de inicio:</label>
+                    <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+    
+                    <label for="restricciones">Restricciones dietéticas:</label>
+                    <textarea id="restricciones" name="restricciones"></textarea>
+                </fieldset>
+    
+                <button type="submit">Solicitar Plan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <h2>Enlaces Rápidos</h2>
+            <ul>
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+                <li><a href="terminos.html">Términos y Condiciones</a></li>
+                <li><a href="cancelacion.html">Política de Cancelación</a></li>
+            </ul>
+        </nav>
+        <section id="idiomas">
+            <h2>Seleccionar Idioma</h2>
+            <ul>
+                <li><a href="?lang=es">Español</a></li>
+                <li><a href="?lang=en">English</a></li>
+                <li><a href="?lang=fr">Français</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2024 Sabores Exóticos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

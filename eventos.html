@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Sabores Exóticos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="menu.html">Menú Internacional</a></li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                    <ul>
+                        <li><a href="menus-semanales.html">Menús Semanales</a></li>
+                        <li><a href="cursos-cocina.html">Cursos de Cocina</a></li>
+                        <li><a href="eventos.html">Eventos y Celebraciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Eventos y Celebraciones</h1>
+    
+        <section id="tipos-eventos">
+            <h2>Tipos de Eventos</h2>
+            
+            <article id="bodas">
+                <h3>Bodas</h3>
+                <img src="images/eventos/boda.jpg" alt="Evento de Boda">
+                <p>Hacemos de tu día especial un momento inolvidable.</p>
+                <ul>
+                    <li>Menús personalizados</li>
+                    <li>Decoración temática</li>
+                    <li>Coordinación completa</li>
+                    <li>Capacidad hasta 200 personas</li>
+                </ul>
+            </article>
+    
+            <article id="corporativos">
+                <h3>Eventos Corporativos</h3>
+                <img src="images/eventos/corporativo.jpg" alt="Evento Corporativo">
+                <p>Soluciones profesionales para tu empresa.</p>
+                <ul>
+                    <li>Servicio de catering</li>
+                    <li>Equipamiento audiovisual</li>
+                    <li>Diferentes configuraciones de sala</li>
+                </ul>
+            </article>
+    
+            <article id="sociales">
+                <h3>Eventos Sociales</h3>
+                <img src="images/eventos/social.jpg" alt="Evento Social">
+                <p>Celebraciones memorables para cualquier ocasión.</p>
+                <ul>
+                    <li>Cumpleaños</li>
+                    <li>Aniversarios</li>
+                    <li>Graduaciones</li>
+                    <li>Fiestas temáticas</li>
+                </ul>
+            </article>
+        </section>
+    
+        <section id="galeria-eventos">
+            <h2>Galería de Eventos Anteriores</h2>
+            <img src="images/eventos/evento1.jpg" alt="Evento Anterior 1">
+            <img src="images/eventos/evento2.jpg" alt="Evento Anterior 2">
+            <img src="images/eventos/evento3.jpg" alt="Evento Anterior 3">
+        </section>
+    
+        <section id="formulario-cotizacion">
+            <h2>Solicitar Cotización</h2>
+            <form action="/solicitar-cotizacion" method="post">
+                <fieldset>
+                    <legend>Información del Contacto</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Detalles del Evento</legend>
+                    <label for="tipo-evento">Tipo de Evento:</label>
+                    <select id="tipo-evento" name="tipo-evento" required>
+                        <option value="">Seleccione tipo de evento</option>
+                        <option value="boda">Boda</option>
+                        <option value="corporativo">Evento Corporativo</option>
+                        <option value="cumpleanos">Cumpleaños</option>
+                        <option value="graduacion">Graduación</option>
+                        <option value="otro">Otro</option>
+                    </select>
+    
+                    <label for="fecha-evento">Fecha del Evento:</label>
+                    <input type="date" id="fecha-evento" name="fecha-evento" required>
+    
+                    <label for="num-invitados">Número de Invitados:</label>
+                    <input type="number" id="num-invitados" name="num-invitados" min="1" required>
+    
+                    <label for="preferencias">Preferencias y Detalles Adicionales:</label>
+                    <textarea id="preferencias" name="preferencias" rows="4"></textarea>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Servicios Adicionales</legend>
+                    <label><input type="checkbox" name="servicios[]" value="decoracion"> Decoración</label>
+                    <label><input type="checkbox" name="servicios[]" value="musica"> Música en vivo</label>
+                    <label><input type="checkbox" name="servicios[]" value="fotografia"> Fotografía</label>
+                    <label><input type="checkbox" name="servicios[]" value="transporte"> Transporte</label>
+                </fieldset>
+    
+                <button type="submit">Solicitar Cotización</button>
+            </form>
+        </section>
+    
+        <section id="politicas">
+            <h2>Políticas de Reservación</h2>
+            <article>
+                <h3>Tiempos de Anticipación Requeridos</h3>
+                <ul>
+                    <li>Bodas y eventos especiales: 18-20 meses de anticipación</li>
+                    <li>Eventos escolares y actividades familiares: 2 semanas a 2 meses</li>
+                    <li>Despedidas y eventos sociales: 1 semana a 30 días</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <h2>Enlaces Rápidos</h2>
+            <ul>
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+                <li><a href="terminos.html">Términos y Condiciones</a></li>
+                <li><a href="cancelacion.html">Política de Cancelación</a></li>
+            </ul>
+        </nav>
+        <section id="idiomas">
+            <h2>Seleccionar Idioma</h2>
+            <ul>
+                <li><a href="?lang=es">Español</a></li>
+                <li><a href="?lang=en">English</a></li>
+                <li><a href="?lang=fr">Français</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2024 Sabores Exóticos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

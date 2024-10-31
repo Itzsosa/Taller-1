@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Sabores Exóticos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="menu.html">Menú Internacional</a></li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                    <ul>
+                        <li><a href="menus-semanales.html">Menús Semanales</a></li>
+                        <li><a href="cursos-cocina.html">Cursos de Cocina</a></li>
+                        <li><a href="eventos.html">Eventos y Celebraciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Reserva Tu Mesa</h1>
+    
+        <section id="info-reserva">
+            <h2>Información de Reservas</h2>
+            <p>Para garantizar el mejor servicio, te recomendamos realizar tu reserva con al menos 24 horas de anticipación.</p>
+            <div class="horarios">
+                <h3>Horarios de Atención</h3>
+                <ul>
+                    <li>Lunes a Jueves: 12:00 - 23:00</li>
+                    <li>Viernes y Sábado: 12:00 - 01:00</li>
+                    <li>Domingo: 12:00 - 22:00</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section id="formulario-reserva">
+            <h2>Formulario de Reserva</h2>
+            <form action="/procesar-reserva" method="post">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+    
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+    
+                    <label for="hora">Hora:</label>
+                    <select id="hora" name="hora" required>
+                        <option value="">Seleccione una hora</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
+                    </select>
+    
+                    <label for="comensales">Número de comensales:</label>
+                    <input type="number" id="comensales" name="comensales" min="1" max="20" required>
+    
+                    <label for="ocasion">Ocasión especial:</label>
+                    <select id="ocasion" name="ocasion">
+                        <option value="ninguna">Ninguna</option>
+                        <option value="cumpleanos">Cumpleaños</option>
+                        <option value="aniversario">Aniversario</option>
+                        <option value="negocios">Comida de negocios</option>
+                        <option value="otra">Otra</option>
+                    </select>
+    
+                    <label for="comentarios">Comentarios adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                </div>
+    
+                <button type="submit">Confirmar Reserva</button>
+            </form>
+        </section>
+    
+        <section id="politicas-reserva">
+            <h2>Políticas de Reserva</h2>
+            <ul>
+                <li>Se requiere un número de tarjeta de crédito para garantizar reservas de grupos de más de 6 personas.</li>
+                <li>Cancelaciones con menos de 24 horas de anticipación pueden generar un cargo.</li>
+                <li>Para grupos grandes (más de 10 personas), por favor contacte directamente con el restaurante.</li>
+                <li>Tiempo máximo de espera: 15 minutos después de la hora reservada.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <h2>Enlaces Rápidos</h2>
+            <ul>
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+                <li><a href="terminos.html">Términos y Condiciones</a></li>
+                <li><a href="cancelacion.html">Política de Cancelación</a></li>
+            </ul>
+        </nav>
+        <section id="idiomas">
+            <h2>Seleccionar Idioma</h2>
+            <ul>
+                <li><a href="?lang=es">Español</a></li>
+                <li><a href="?lang=en">English</a></li>
+                <li><a href="?lang=fr">Français</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2024 Sabores Exóticos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

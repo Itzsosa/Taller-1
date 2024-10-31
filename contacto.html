@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Sabores Exóticos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="menu.html">Menú Internacional</a></li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                    <ul>
+                        <li><a href="menus-semanales.html">Menús Semanales</a></li>
+                        <li><a href="cursos-cocina.html">Cursos de Cocina</a></li>
+                        <li><a href="eventos.html">Eventos y Celebraciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+    
+        <section id="info-contacto">
+            <h2>Información de Contacto</h2>
+            <div class="direccion">
+                <h3>Ubicación</h3>
+                <p>Calle Principal 123</p>
+                <p>Ciudad, CP 12345</p>
+                <p>País</p>
+            </div>
+            
+            <div class="contacto-directo">
+                <h3>Contacto Directo</h3>
+                <p>Teléfono: +34 123 456 789</p>
+                <p>Email: info@saboresexoticos.com</p>
+                <p>WhatsApp: +34 987 654 321</p>
+            </div>
+    
+            <div class="horario">
+                <h3>Horario de Atención</h3>
+                <p>Lunes a Jueves: 12:00 - 23:00</p>
+                <p>Viernes y Sábado: 12:00 - 01:00</p>
+                <p>Domingo: 12:00 - 22:00</p>
+            </div>
+        </section>
+    
+        <section id="formulario-contacto">
+            <h2>Envíanos un Mensaje</h2>
+            <form action="/enviar-mensaje" method="post">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+    
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Seleccione un asunto</option>
+                        <option value="reserva">Información sobre reservas</option>
+                        <option value="evento">Eventos privados</option>
+                        <option value="menu">Consulta sobre el menú</option>
+                        <option value="trabajo">Oportunidades laborales</option>
+                        <option value="otro">Otro</option>
+                    </select>
+    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                </div>
+    
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    
+        <section id="redes-sociales">
+            <h2>Síguenos en Redes Sociales</h2>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </section>
+    
+        <section id="mapa">
+            <h2>Cómo Llegar</h2>
+            <div class="mapa-container">
+                <!-- Aquí iría el iframe del mapa -->
+                <img src="/api/placeholder/800/400" alt="Mapa de ubicación">
+            </div>
+            <div class="instrucciones-llegada">
+                <h3>Cómo Llegar</h3>
+                <ul>
+                    <li>Metro: Línea 1, Estación Central (5 min caminando)</li>
+                    <li>Autobús: Líneas 14, 27 y 32</li>
+                    <li>Parking público a 100 metros</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <h2>Enlaces Rápidos</h2>
+            <ul>
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+                <li><a href="terminos.html">Términos y Condiciones</a></li>
+                <li><a href="cancelacion.html">Política de Cancelación</a></li>
+            </ul>
+        </nav>
+        <section id="idiomas">
+            <h2>Seleccionar Idioma</h2>
+            <ul>
+                <li><a href="?lang=es">Español</a></li>
+                <li><a href="?lang=en">English</a></li>
+                <li><a href="?lang=fr">Français</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2024 Sabores Exóticos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

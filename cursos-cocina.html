@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Sabores Exóticos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="menu.html">Menú Internacional</a></li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                    <ul>
+                        <li><a href="menus-semanales.html">Menús Semanales</a></li>
+                        <li><a href="cursos-cocina.html">Cursos de Cocina</a></li>
+                        <li><a href="eventos.html">Eventos y Celebraciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Cursos Especializados de Cocina</h1>
+    
+        <section id="categorias-cursos">
+            <h2>Nuestros Cursos</h2>
+            
+            <article id="curso-bbq">
+                <h3>BBQ & Parrilla</h3>
+                <img src="images/cursos/bbq.jpg" alt="Curso de BBQ">
+                <p>Aprende las técnicas fundamentales de la parrilla y BBQ.</p>
+                <ul>
+                    <li>Duración: 4 semanas</li>
+                    <li>Nivel: Principiante a Intermedio</li>
+                    <li>Incluye: Material y degustación</li>
+                </ul>
+                <a href="#formulario-inscripcion">Inscríbete Ahora</a>
+            </article>
+    
+            <article id="curso-japones">
+                <h3>Cocina Japonesa</h3>
+                <img src="images/cursos/japones.jpg" alt="Curso de Cocina Japonesa">
+                <p>Descubre los secretos de la gastronomía japonesa.</p>
+                <ul>
+                    <li>Duración: 6 semanas</li>
+                    <li>Nivel: Todos los niveles</li>
+                    <li>Incluye: Ingredientes y manual</li>
+                </ul>
+                <a href="#formulario-inscripcion">Inscríbete Ahora</a>
+            </article>
+    
+            <article id="curso-mediterraneo">
+                <h3>Cocina Mediterránea</h3>
+                <img src="images/cursos/mediterraneo.jpg" alt="Curso de Cocina Mediterránea">
+                <p>Explora los sabores del Mediterráneo.</p>
+                <ul>
+                    <li>Duración: 5 semanas</li>
+                    <li>Nivel: Intermedio</li>
+                    <li>Incluye: Ingredientes y recetario</li>
+                </ul>
+                <a href="#formulario-inscripcion">Inscríbete Ahora</a>
+            </article>
+    
+            <article id="curso-italiano">
+                <h3>Pastas Italianas</h3>
+                <img src="images/cursos/italiano.jpg" alt="Curso de Pastas Italianas">
+                <p>Aprende a hacer pasta fresca y salsas tradicionales.</p>
+                <ul>
+                    <li>Duración: 4 semanas</li>
+                    <li>Nivel: Todos los niveles</li>
+                    <li>Incluye: Ingredientes y utensilios</li>
+                </ul>
+                <a href="#formulario-inscripcion">Inscríbete Ahora</a>
+            </article>
+        </section>
+    
+        <section id="instructores">
+            <h2>Nuestros Instructores</h2>
+            <article class="instructor">
+                <img src="images/instructores/chef1.jpg" alt="Chef Instructor 1">
+                <h3>Nombre del Chef</h3>
+                <p>Especialidad y experiencia del chef...</p>
+            </article>
+            <!-- Más instructores -->
+        </section>
+    
+        <section id="formulario-inscripcion">
+            <h2>Formulario de Inscripción</h2>
+            <form action="/procesar-inscripcion" method="post">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Detalles del Curso</legend>
+                    <label for="curso">Seleccionar Curso:</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Seleccione un curso</option>
+                        <option value="bbq">BBQ & Parrilla</option>
+                        <option value="japones">Cocina Japonesa</option>
+                        <option value="mediterraneo">Cocina Mediterránea</option>
+                        <option value="italiano">Pastas Italianas</option>
+                    </select>
+    
+                    <label for="horario">Horario Preferido:</label>
+                    <select id="horario" name="horario" required>
+                        <option value="manana">Mañana (9:00 - 12:00)</option>
+                        <option value="tarde">Tarde (14:00 - 17:00)</option>
+                        <option value="noche">Noche (18:00 - 21:00)</option>
+                    </select>
+    
+                    <label for="experiencia">Nivel de Experiencia:</label>
+                    <select id="experiencia" name="experiencia">
+                        <option value="principiante">Principiante</option>
+                        <option value="intermedio">Intermedio</option>
+                        <option value="avanzado">Avanzado</option>
+                    </select>
+                </fieldset>
+    
+                <button type="submit">Enviar Inscripción</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <h2>Enlaces Rápidos</h2>
+            <ul>
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+                <li><a href="terminos.html">Términos y Condiciones</a></li>
+                <li><a href="cancelacion.html">Política de Cancelación</a></li>
+            </ul>
+        </nav>
+        <section id="idiomas">
+            <h2>Seleccionar Idioma</h2>
+            <ul>
+                <li><a href="?lang=es">Español</a></li>
+                <li><a href="?lang=en">English</a></li>
+                <li><a href="?lang=fr">Français</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2024 Sabores Exóticos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
